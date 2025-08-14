@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="">
+    <!-- <section id="header">
+        <a href="# "><img src="img/img3.png" alt="" height="100px" width="120px"></a>
+        <div>
+            <ul id="navbar"> 
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contect.html">Contect</a></li>
+                <li><a href="cart.html "><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+            </ul>
+        </div>
+    </section> -->
+    <section class="helo">
+    <nav class="navbar navbar-expand-lg navebar-dark bg-transparent">
+      <div class="container">
+        <!--logo-->
+        <img src="img/img3.png" alt="" height="100px" width="120px">
+        <!--toggle Btn-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--slidbar-->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!--slidebar Header-->
+          <div class="offcanvas-header text-dark border-bottom">
+            <h6 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/img3.png" alt="" height="100px" width="120px"></h6>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"  aria-label="Close"></button>
+          </div>
+          <!--SideBar body-->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link active  " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link " href="#services">Services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link " href="#content">Content</a>
+              </li>
+            </ul>
+            <!--Login  / Sign up -->
+            <br>
+            <div class="d-flex flex-column flex-lg-row justify-content-center
+            align-items-center gap-3">
+                <a href="#login" class="#">Login</a>
+                <a 
+                href="#signup"
+                class="text-white text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: #f94ca4;">
+                Sign Up
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+<!-- hero section -->
+<div class="hero">
+<section class="content-section">
+  <div class="container">
+      <!-- Desktop layout (image on right) -->
+      <div class="row align-items-center d-none d-md-flex">
+          <div class="col-md-6">
+            <h4>Trade-in-offer</h4>
+            <h2>Super value deals</h2>
+            <h1 class="img1">On all products</h1>
+            <p>Save more with coupons & up to 70% off </p>
+            <button  >Submit</button>
+          </div>
+          <div class="col-md-6">
+              <img src="img/img2.png" alt="Description" class="img-fluid">
+          </div>
+      </div>
+      
+      <!-- Mobile layout (image below text) -->
+      <div class="row align-items-center d-md-none">
+          <div class="col-12 order-2 order-md-1">
+            <h4 style="text-align: center;"> Trade-in-offer</h4>
+            <h2>Super value deals</h2>
+            <h1 class="img1">On all products</h1>
+            <p >Save more with coupons & up to 70% off </p>
+            <button class="img">Submit</button>
+          </div>
+          <div class="col-12 order-1 order-md-2 mb-4">
+              <img src="img/img2.png" alt="Description" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</section>
+</div>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Dextop layot -->
+<section id="feature" class="section-p1">
+  <div class="fe-box">
+    <img src="img/feature/f1.1.png" alt="" height="110px" width="110px">
+    <h6>Free Shipping</h6>
+  </div>
+
+  <div class="fe-box">
+    <img src="img/feature/f2.png" alt="" height="110px" width="110px">
+    <h6 style="background-color:#cdebbc;">OneLine Order</h6>
+  </div>
+ 
+  <div class="fe-box">
+    <img src="img/feature/f3.png" alt="" height="110px" width="110px">
+    <h6 style="background-color:#d1e8f2;">Save Money</h6>
+  </div>
+
+  <div class="fe-box">
+    <img src="img/feature/f4.png" alt="" height="110px" width="110px">
+    <h6 style="background-color:#cdd4f8 ;">Promotions</h6>
+  </div>
+
+  <div class="fe-box">
+    <img src="img/feature/f5.png" alt="" height="110px" width="110px">
+    <h6 style="background-color:#f6dbf6;">Happy sall</h6>
+  </div>
+  
+  <div class="fe-box">
+    <img src="img/feature/f6.png" alt="" height="110px" width="110px">
+    <h6 style="background-color:#fff2e5;">F24/7 Support</h6>
+  </div>
+
+
+
+<!-- Mobile Phone loyot -->
+
+
+</section>
+
+<!-- End of Mobile section -->
+
+<section id="product1" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Summer Collection New Morden Design </p>
+  <div class="pro-container">
+    <div class="pro">
+      <img src="img/protuct/p1.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p2.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p3.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p4.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p5.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p6.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p7.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p1.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="banner" class="section-m1" >
+   <h4>Repair Services</h4>
+   <h2>Up to <span>70% Off</span>-All t-Shirts & Accessoris</h2>
+   <button class="normal">Explore More</button>
+</section>
+
+<section id="product1" class="section-p1">
+  <h2>New Aravils</h2>
+  <p>Summer Collection New Morden Design </p>
+  <div class="pro-container">
+    <div class="pro">
+      <img src="img/protuct/n1.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/n2.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/n3.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/n4.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/n5.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/n6.jpg" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p7.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img/protuct/p1.png" alt="product1">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Brown Casual T-shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4>$40</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="sm-banner" class="section-mm1">
+  <div class="bannner-box">
+    <h4>Crezy deals</h4>
+    <h2>buy 1 get 1 free</h2>
+    <span>The best classic dress is on sale at cara</span>
+    <button class="white">Learn More</button>
+  </div>
+  <div class="bannner-box banner-box2 ">
+    <h4>Spring Summer</h4>
+    <h2>Upcoming Season</h2>
+    <span>The best classic dress is on sale at cara</span>
+    <button class="white">Collection</button>
+  </div>
+  </section>
+
+
+<section id="banner3" class="section-mn1">
+  <div class="bannner-box  ">
+    <h2>SEASONAL SHALE</h2>
+    <h3>Winter collection -50% off</h3>
+  </div>
+  <div class="bannner-box banner-box2 ">
+    <h2>NEW FOOTWERE COLLECTION</h2>
+    <h3>Spring / Summer 2025</h3>
+  </div>
+  <div class="bannner-box banner-box3 ">
+    <h2>T-Shirts</h2>
+    <h3>New Trendy Prints</h3>
+  </div>
+</section>
+
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newtext">
+    <h4>Sign Up For newsletter</h4>
+    <p>Get e-mail Uptates About Our latest shop and <span>special offer</span>. </p>
+</div>
+<div class="form">
+  <input type="text" placeholder="Your Email address">
+  <button class="normal">Sign Up</button>
+</div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Nexa</h3>
+                    <p>Innovative solutions for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 style="margin-left: 30px;">Products</h3>
+                    <ul>
+                        <li><a href="#">Cloud Platform</a></li>
+                        <li><a href="#">AI Automation</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">API Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 style="margin-left: 30px;">Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 style="margin-left: 30px;">Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexa Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<!-- <footer class="section-p1">
+  <div class="col">
+    <img class="logo" src=".//img/img3.png" alt=""height="100px" width="120px">
+    <h4>Contact</h4>
+    <p><strong>Address :</strong>2/278, Nagamarai,Pennageam,<br>Dharmapurai</p>
+    <p><strong>Phone :</strong>+91 9943544846,+91 9865782681,<br> +91 9787785402</p>
+    <p><strong>Hours :</strong>10:00 - 18:00, Mon-Sat</p>
+    <div class="folow">
+      <h4>Follow</h4>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Condection</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="col">
+    <h4>My Acount</h4>
+    <a href="#">Sign in</a>
+    <a href="#">View Count</a>
+    <a href="#">My Wishlist</a>
+    <a href="">Track My Order</a>
+    <a href="#">Help</a>
+  </div>
+
+</footer> -->
+
+ <!-- <section id="hero">ygyy
+        <div class="container mt-5 ">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="hero1">
+                <h4>Trade-in-offer</h4>
+                <h2>Super value deals</h2>
+                <h1>On all products</h1>
+                <p>Save more with coupons & up to 70% off </p>
+                <button >Submit</button>
+                </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <img src="img/img2.png" alt="" width="500px" height="500px">
+              </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
